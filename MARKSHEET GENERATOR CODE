@@ -1,0 +1,47 @@
+# include<stdio.h>
+
+float avg;
+float p;
+float c;
+float b;
+float a;
+float t;
+float percentage;
+ int main()
+{
+ printf("SAQIB\n");
+ 
+ printf("Enter marks of python:");
+ scanf("%f",& p);
+ 
+ printf("Enter marks of C++:");
+ scanf("%f",& c);
+ 
+ printf("Enter marks of Basic Electronics:");
+ scanf("%f",& b);
+ 
+ printf("Enter marks of Arduino:");
+ scanf("%f",& a);	
+ 
+ printf("Enter total marks:");
+ scanf("%f",& t);
+ 
+ avg= (p+c+b+a)/4;
+ printf( "\n avg= %f",avg);
+  
+ percentage= ((p+c+b+a)/t)*100;
+ printf( "\n p= %f",percentage);
+ 
+ 
+ if (percentage>=80)
+ {printf("\nGRADE= A-0NE");} 
+ else if(percentage>70 && percentage<80 )
+ {printf("\nGRADE= A"); }
+ else if(percentage>60 && percentage<70)
+ {printf("\nGRADE= B"); }
+ else if(percentage>50 && percentage<60)
+ {printf("\nGRADE= C"); }
+ else if(percentage<50)
+ {printf("\n GRADE= FAIL"); }
+  
+}
