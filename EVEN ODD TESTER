@@ -1,0 +1,18 @@
+# include<stdio.h>
+int givennum;
+int b=2;
+int mod;
+ main()
+{
+	printf("Enter any number:");
+	scanf("%d",& givennum);
+	
+	mod= givennum % b;
+	if (mod =0)
+	{printf("given number is EVEN");}
+	else if(mod !=0)
+	{printf("given number is ODD");}
+	else
+	{printf("number is zero");
+	}
+}
